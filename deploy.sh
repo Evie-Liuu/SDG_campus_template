@@ -13,8 +13,8 @@ echo "搬移 dist/ -> docs/..."
 cp -r dist docs
 
 echo "推送到 GitHub..."
-git add .
-git commit -m "chore: deploy to GitHub Pages" || echo "⚠️ 沒有變更需要提交"
+git add docs
+git commit -m "deploy to GitHub Pages" || echo "⚠️ 沒有變更需要提交"
 git push origin main
 
 echo "部署完成！請稍等 GitHub Pages 更新"
